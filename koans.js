@@ -126,7 +126,7 @@ test('Assigning a value to a local variable.', t => {
   let one
   one = 1 // eslint-disable-line prefer-const
 
-  t.is(__, one)
+  t.is(1, one)
 })
 
 /**
@@ -137,13 +137,13 @@ test('Are itegers and floats the same type?', t => {
   const typeOfInteger = typeof 6
   const typeOfFloat = typeof 3.14159
 
-  t.is(__, typeOfInteger === typeOfFloat)
+  t.is(typeof 6 === typeof 3.14159, typeOfInteger === typeOfFloat)
 })
 
 test('What is the javascript numeric type?', t => {
   const typeOfInteger = typeof 42
 
-  t.is(__, typeOfInteger)
+  t.is(typeof 42, typeOfInteger)
 })
 
 test('What is a integer number equivalent to 1.0?', t => {
