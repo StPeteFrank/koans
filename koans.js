@@ -91,31 +91,31 @@ test('What is equality with type coercion?', t => {
 test('What is the truthyness of positive numbers?', t => {
   const oneIsTruthy = !!1
 
-  t.is(__, oneIsTruthy)
+  t.is(!!1, oneIsTruthy)
 })
 
 test('What is the truthyness of negative numbers?', t => {
   const negativeOneIsTruthy = !!-1
 
-  t.is(__, negativeOneIsTruthy)
+  t.is(!!-1, negativeOneIsTruthy)
 })
 
 test('What is the truthyness of zero?', t => {
   const zeroIsTruthy = !!0
 
-  t.is(__, zeroIsTruthy)
+  t.is(!!0, zeroIsTruthy)
 })
 
 test('What is the truthyness of null?', t => {
   const nullIsTruthy = !!null
 
-  t.is(__, nullIsTruthy)
+  t.is(!!null, nullIsTruthy)
 })
 
 test('What is the truthyness of undefined?', t => {
   const undefinedIsTruthy = !!undefined
 
-  t.is(__, undefinedIsTruthy)
+  t.is(!!undefined, undefinedIsTruthy)
 })
 
 /**
